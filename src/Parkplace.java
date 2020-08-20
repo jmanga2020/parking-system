@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 public class Parkplace extends javax.swing.JFrame {
 
     /**
-     * Creates new form parkplace;
+     * Here is where i declare my conn, which stands for connection and pst stands for prepared statement
      */
     Connection conn=null;
   PreparedStatement pst=null;
@@ -258,6 +258,8 @@ public class Parkplace extends javax.swing.JFrame {
     private void pwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_pwordActionPerformed
+    
+    //Here in this function are the codes that performs the action performed in batton submit, to submit details of the user to the database
 
     private void btnsubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsubmitActionPerformed
          try{
@@ -285,6 +287,8 @@ public class Parkplace extends javax.swing.JFrame {
     private void ypasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ypasswordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ypasswordActionPerformed
+    
+    //These codes performs functions which is used by the user or admin to enter or login to the system
 
     private void btnenterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnenterActionPerformed
         try {
@@ -301,6 +305,8 @@ public class Parkplace extends javax.swing.JFrame {
             pst.setString(2,ypassword.getText());
             ResultSet adminrs=adminpst.executeQuery();
             ResultSet rs=pst.executeQuery();
+            
+            //These conditions here is test for the details of the user or admin in the database when he or she want to login and if it is true can allow to login
             
             if(rs.next())
             {
