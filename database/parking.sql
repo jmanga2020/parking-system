@@ -51,6 +51,7 @@ INSERT INTO `admin` (`FirstName`, `Surname`, `Email`, `Password`) VALUES
 -- Table structure for table `driver`
 --
 
+/*here it the sql query or statement to create table driver*/;
 DROP TABLE IF EXISTS `driver`;
 CREATE TABLE IF NOT EXISTS `driver` (
   `PhoneNumber` varchar(20) NOT NULL,
@@ -65,6 +66,8 @@ CREATE TABLE IF NOT EXISTS `driver` (
 -- Dumping data for table `driver`
 --
 
+/*here it the sql query or statement to insert data in table driver*/;
+
 INSERT INTO `driver` (`PhoneNumber`, `FirstName`, `Surname`, `Email`, `Password`) VALUES
 ('0754257706', 'jackline', 'manga', 'jackmanga@gmail.com', '12345'),
 ('0654824122', 'shamsu', 'abdi', 'mkongewashamsu96@gmail.com', '0654824122Sm');
@@ -75,6 +78,7 @@ INSERT INTO `driver` (`PhoneNumber`, `FirstName`, `Surname`, `Email`, `Password`
 -- Table structure for table `payment`
 --
 
+/*here it the sql query or statement to create table payment*/;
 DROP TABLE IF EXISTS `payment`;
 CREATE TABLE IF NOT EXISTS `payment` (
   `Period` varchar(50) NOT NULL,
@@ -82,6 +86,8 @@ CREATE TABLE IF NOT EXISTS `payment` (
   `PaymentMethod` varchar(50) NOT NULL,
   `PayerPhone` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*here it the sql query or statement to insert data in table payment*/;
 
 --
 -- Dumping data for table `payment`
@@ -115,6 +121,8 @@ INSERT INTO `payment` (`Period`, `Price`, `PaymentMethod`, `PayerPhone`) VALUES
 -- Table structure for table `slot`
 --
 
+/*here it the sql query or statement to create table slot*/;
+
 DROP TABLE IF EXISTS `slot`;
 CREATE TABLE IF NOT EXISTS `slot` (
   `SlotNo` int(20) NOT NULL,
@@ -130,6 +138,8 @@ CREATE TABLE IF NOT EXISTS `slot` (
 --
 -- Dumping data for table `slot`
 --
+
+/*here it the sql query or statement to insert data in table slot*/;
 
 INSERT INTO `slot` (`SlotNo`, `SlotSize`, `Location`, `Status`, `ArrivalTime`, `Duration`, `DriverPhone`) VALUES
 (1, '10*6', 'SINZA', 'Paid', '2020/08/19 11:31:21', '9', '7554584646586'),
