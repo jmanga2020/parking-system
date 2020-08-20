@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Shamsu
+ * @author Shamsu and jack
  */
 public class AllocateSlot extends javax.swing.JFrame {
 Connection conn=null;
